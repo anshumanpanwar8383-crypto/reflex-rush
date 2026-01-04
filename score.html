@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Score</title>
+  <style>
+    body {
+      margin:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#0f172a;
+      color:white;
+      font-family:Arial;
+    }
+    .box {
+      background:#1e293b;
+      padding:30px;
+      border-radius:16px;
+      text-align:center;
+    }
+    a {
+      color:#22c55e;
+      text-decoration:none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Your Score</h2>
+    <p id="score"></p>
+    <p id="best"></p>
+    <a href="index.html">Play Again</a>
+  </div>
+
+  <script>
+    const p = new URLSearchParams(location.search);
+    const s = p.get("score");
+    document.getElementById("score").textContent =
+      "Time: " + s + " ms";
+    document.getElementById("best").textContent =
+      "Best: " + localStorage.best + " ms";
+  </script>
+</body>
+</html>

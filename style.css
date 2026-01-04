@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg,#0f172a,#2563eb);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.game {
+  background: rgba(0,0,0,0.4);
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  width: 280px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #22c55e;
+}
+
+button.wait {
+  background: #ef4444;
+  color: white;
+}
+
